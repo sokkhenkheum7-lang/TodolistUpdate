@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --animate-fade-in: fadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-in: slideIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+@keyframes slideIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+.dark ::-webkit-scrollbar { width: 6px; height: 6px; }
+.dark ::-webkit-scrollbar-track { background: #000000; }
+.dark ::-webkit-scrollbar-thumb { background: #18181b; border-radius: 9999px; }
+.dark ::-webkit-scrollbar-thumb:hover { background: #27272a; }
