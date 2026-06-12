@@ -19,7 +19,7 @@ export default function Sidebar({
         <img
           src={logo}
           alt="Workspace Logo"
-          className="w-12 h-12 object-cover rounded-full border border-slate-200 dark:border-zinc-800"
+          className="w-14 h-14 object-cover rounded-full border border-slate-200 dark:border-zinc-800"
         />
 
         <div>
